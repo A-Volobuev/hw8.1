@@ -1,0 +1,77 @@
+// ---------------------------------------------------------------Блок client---------------------------------------------------------------
+.section__client{
+    padding: 60px 0px;
+
+    @media (min-width: $desktop){
+    padding: 94px 0px;
+    }
+}
+// Заголовок
+.client__title{
+    line-height: $line-height-submain;
+    text-align: center;
+    font-weight: $font-weight-title;
+    font-size: $fs-28;
+
+    @media (min-width: $desktop){
+    font-size: $fs-36;
+    }
+}
+// Блоки
+.client__list{
+    margin-top: 30px;
+    display: grid;
+    grid-template: repeat(3, 1fr)/ repeat(2, 1fr);
+    gap: 30px;
+    
+    @media (min-width: $tablet) and (max-width: $desktop){
+        display: grid;
+        grid-template: repeat(2, 1fr)/ repeat(3, 1fr);
+    }
+
+    @media (min-width: $desktop) {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    }
+}
+
+.client__link{
+    fill:$color-unactive-svg;
+
+    &:hover{
+        fill:$color-brand;
+    }
+}
+
+.client__link-box{
+    border: 1px solid $color-unactive-svg;
+    border-radius:4px;
+
+    @media (max-width: $mobile){
+    width: 210px;
+    height: 92px;
+    }
+
+    @media (min-width: $tablet)and (max-width: $desktop){
+    width: 226px;
+    height: 92px;
+    }
+
+    @media (min-width: $desktop){
+    width: 170px;
+    height: 92px;
+    }
+}
+.client__icon{
+    @media (min-width: $tablet)and (max-width: $desktop){
+        width: 226px;
+        height: 92px;
+        }
+        
+    @media (max-width: $mobile){
+        width: 210px;
+        height: 92px;
+        }
+}
+

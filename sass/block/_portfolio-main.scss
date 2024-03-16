@@ -1,0 +1,142 @@
+// -------------------------------------------------------------Блок portfolio main---------------------------------------------------------------
+.main-portfolio__container{
+    padding: 0px 0px 60px 0px;
+
+    @media (min-width: $desktop){
+    padding: 0px 0px 90px 0px;
+    }
+}
+// Кнопки фильтры
+.filter__block{
+    margin: 60px 0px 40px 0px;
+
+    @media (min-width: $desktop){
+    margin: 94px 0px 50px 0px;
+    }
+}
+.filter__list{
+    display: flex;
+    gap: 8px;
+
+    @media (max-width: $mobile){
+    flex-wrap: wrap;
+    &-item:nth-child(3) {
+        margin-right: 50px;
+    }
+    &-item:nth-child(4), &-item:nth-child(5) {
+        margin-top: 15px;
+    }
+    }
+
+    @media (min-width: $tablet){
+    justify-content: center;
+    }
+
+    @media (min-width: $desktop){
+        justify-content: center;
+    }
+}
+.filter__button{
+    display: block;
+    padding: 6px 22px;
+
+    transition: $animation;
+}
+
+// пункты портфолио
+.category__list{
+
+    @media (min-width: $tablet) and (max-width: $desktop){
+    display: grid;
+    
+    grid-template: repeat(3,1fr)/repeat(2,1fr);
+    gap: 30px;
+    }
+
+    @media (min-width: $desktop){
+    display: grid;
+
+    grid-template: repeat(3,1fr)/repeat(3,1fr);
+    gap: 30px;
+    padding: 0px 15px;
+    }
+}
+.category__sign{
+    border-right: 1px solid rgb(238, 238, 238);
+    border-bottom: 1px solid rgb(238, 238, 238);
+    border-left: 1px solid rgb(238, 238, 238);
+    padding: 20px 24px;
+}
+.category__column{
+    transition: $animation;
+
+    &:hover{
+        box-shadow: 1px 4px 6px  rgba(0, 0, 0, 0.16);
+        box-shadow: 0px 5px 6px  rgba(0, 0, 0, 0.06);
+        box-shadow: 2px 7px 4px  rgba(0, 0, 0, 0.12);
+    }
+
+    @media (max-width: $mobile){
+    &:not(:first-child){
+        margin-top: 30px;
+    }
+    }
+}
+// Текст
+.sign__title{
+    font-size: $fs-18;
+    font-weight: $font-weight-title;
+    line-height: 2;
+    color: $color-title;
+
+    margin-bottom: 4px;
+}
+.sign__subtitle{
+    font-size: $fs-16;
+    line-height: 1.87;
+    color: $color-subtitle;
+}
+
+// Карточки портфолио
+.category__wrapper{
+    position: relative;
+    overflow: hidden;
+}
+.category__wrapper-image{
+    @media (max-width: $mobile){
+    width: 100%;
+    object-fit: cover;
+    }
+}
+.category__hover-box{
+    position: absolute;
+    display: block;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.55;
+    letter-spacing: 0.54px;
+    color:$color-white;
+    padding: 63px 24px;
+    background-color:$hover-category-box;
+
+    transform: translateY(100%);
+    transition: $animation;
+}
+
+.category__column:hover .category__hover-box{
+    transform: translateY(0%); 
+    animation: slideUp 250ms ease; 
+} 
+@keyframes slideUp {
+    0% {
+    transform: translateY(100%);
+    }
+    100% {
+    transform: translateY(0);
+    }
+}

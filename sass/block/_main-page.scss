@@ -1,0 +1,77 @@
+@import'style-block/style-main-page';
+// ---------------------------------------------------------------Главная страница---------------------------------------------------------------
+.main__box{
+    @media (max-width: $mobile){
+    padding: 118px 0px 118px 0px;
+    background-image: url(../images/bg/bg-mobile.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+        @media (min-resolution: 2dppx){
+        background-image: url(../images/bg/bg-mobile@2x.webp);
+        }
+    }
+
+    @media (min-width: 481px){
+        padding: 118px 0px 118px 0px;
+    background-image: url(../images/bg/bg-tablet.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+        @media (min-resolution: 2dppx){
+        background-image: url(../images/bg/bg-tablet@2x.webp);
+        }
+    }
+
+    @media (min-width: 781px){
+        padding: 200px 0px 210px 0px;
+    background-image: url(../images/bg/bg.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+        @media (min-resolution: 2dppx){
+        background-image: url(../images/bg/bg@2x.webp);
+        }
+    }
+}
+
+.main__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+
+    @media (min-width: $desktop){
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items:center;
+    }
+}
+.main__title{
+    font-size: 26px;
+    line-height: 1.61;
+
+    max-width: 360px;
+    
+    @media (min-width: $desktop){
+    display:block;
+    max-width: 696px;
+
+    font-size: 44px;
+    line-height: 1.36;
+    }
+}
+.main__button {
+    padding: 10px 24px;
+    @media (min-width: $desktop){
+    display:block;
+    margin-top: 30px;
+    padding: 10px 32px;
+    z-index: 0;
+    }
+}
+

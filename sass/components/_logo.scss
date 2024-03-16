@@ -1,0 +1,10 @@
+.logo{
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    font-weight: $font-weight-title;
+    line-height: $line-height-submain;
+
+    &-color{
+        color: $color-brand;
+    }
+}

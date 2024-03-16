@@ -1,0 +1,16 @@
+.modal__input{
+    height: 40px;
+    width: 100%;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+
+    padding-left: 42.5px;
+
+    transition: $animation;
+    &:focus{
+        border-color: $color-brand;
+    }
+    &:focus + .modal__input-icon{
+        fill: $color-brand;
+    }
+}

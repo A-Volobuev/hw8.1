@@ -1,0 +1,154 @@
+@import'style-block/style-footer';
+// ---------------------------------------------------------------Блок footer---------------------------------------------------------------
+.footer__container{ 
+    @media (max-width: $mobile){
+    display: flex;
+    flex-direction: column;
+    }
+
+    @media (min-width: $tablet) and (max-width: $desktop) {
+    display: grid;
+    grid-template: [start] "contacts social" 1fr [row2]
+    [row2] "form form" [row-end]/  1fr 1fr ;
+    }
+
+    @media (min-width: $desktop){
+    display: flex;
+    align-items:center;
+    justify-content: flex-start;
+    align-items:flex-start;
+    justify-content: space-between;
+    }
+}
+.footer__block{
+    @media (max-width: $mobile){
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    }
+
+    @media (min-width: $tablet) and (max-width: $desktop){
+    grid-area: contacts;
+    padding-left: 61px;
+    }
+}
+.footer__box{
+    @media (min-width: $tablet) and (max-width: $desktop){
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 232px;
+    }
+}
+// Лого
+.footer__logo{
+    display: block;
+}
+// Адресс + контакты
+.adress__item{
+    display: block;
+    font-style: normal;
+}
+
+// ------social
+.footer__social-block{
+    @media (min-width: $tablet) and (max-width: $desktop){
+    grid-area: social;
+    padding: 65px 74px 102px ;
+    }
+
+    @media (min-width: $desktop){
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items:stretch;
+
+    margin-left: 107px;
+    padding-top: 72px;
+    }
+}
+.footer__social-title{
+    @media (max-width: $mobile){
+    text-align: center;
+    }
+
+    @media (min-width: $tablet) and (max-width: $desktop){
+    text-align: center;
+    }
+}
+// -------Форма
+.footer__form-block{
+    @media (max-width: $mobile){
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 60px 0px;
+    }
+
+    @media (min-width: $tablet) and (max-width: $desktop) {
+    grid-area: form;
+    display: flex;
+    align-items:center;
+    flex-direction: column;
+    padding-bottom: 60px;
+    }
+
+    @media (min-width: $desktop){
+    margin-left: 93px;
+    padding-top: 72px;
+    }
+}
+.footer__form{
+    @media (max-width: $mobile){
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    }
+
+    @media (min-width: $tablet) and (max-width: $desktop){
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    }
+
+    @media (min-width: $desktop){
+    display: flex;
+    gap: 12px;
+    }
+}
+.footer__form-title{
+    @media (max-width: $mobile){
+        text-align: center;
+    }
+}
+.footer__form-mail{
+    @media (max-width: $mobile){
+        width: 100%;
+    }
+    @media (min-width: $tablet) and (max-width: $desktop){
+        width: 450px;
+    }
+    @media (min-width: $desktop){
+    width: 358px;
+    }
+}
+.footer__form-button{
+    @media (max-width: $mobile){
+    margin-top: 20px;
+    } 
+
+    @media (min-width: $tablet) and (max-width: $desktop){
+        margin-top: 20px;
+    }
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    
+}
+.footer-button__mail-icon{
+    display: block;
+}
+

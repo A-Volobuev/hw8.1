@@ -1,0 +1,88 @@
+// style footer
+.footer{
+    background-color:$color-footer-bg;
+}
+.footer__box{
+    padding: 60px 0px;
+}
+.footer__logo{
+    font-style: normal;
+    color: $color-white; 
+    margin-bottom: 20px;
+}
+.adress__item{
+    line-height:$line-height-main;
+    font-weight: 400;
+
+    & p{
+        color: $color-white;
+    }
+
+    & a{
+        color:$color-subtitle;
+
+        transition: $animation;
+    }
+
+    & a:hover, & a:focus{
+        fill: $color-brand;
+        color: $color-brand;
+    }
+
+    &:not(:last-child){
+        margin-bottom: 9px;
+        }
+}
+
+.footer__social-title{
+    font-weight: $font-weight-title;
+    line-height: $line-height-submain;
+    text-transform: uppercase;
+    color:$color-white;
+}
+
+.footer__social{
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.footer__social-button{
+    background-color:rgb(255, 255, 255, 0.1);
+    fill: $color-white;
+}
+
+.footer__form-title{
+    font-weight: $font-weight-title;
+    line-height: $line-height-submain;
+    text-transform: uppercase;
+    color:$color-white;
+}
+.footer__form{
+    margin-top: 20px;
+}
+
+.footer__form-mail{
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background-color:rgba(33, 150, 243, 0);
+    padding: 15px;
+
+    &:focus{
+        color:$color-white;
+    }
+}
+
+.footer__form-button{
+    background-color: $color-brand;
+    width: 200px;
+    height: 50px;
+    border-radius: 4px;
+}
+.footer-button__text{
+    display: block;
+    font-size: 16px;
+    font-weight: 700;
+    color: $color-white;
+    line-height: 1.87;
+    text-align: center;
+}

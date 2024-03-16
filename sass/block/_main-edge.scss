@@ -1,0 +1,45 @@
+@import'style-block/style-main-edge';
+// ---------------------------------------------------------------Блок edge---------------------------------------------------------------
+.section__edge{
+    padding: 60px 0px;
+
+    @media (min-width: $desktop){
+    padding: 94px 0px;
+    }
+}
+.edge__list{
+    @media (min-width: $tablet){
+    display: grid;
+    grid-template: repeat(2,1fr)/repeat(2,1fr);
+    gap: 30px;
+    }
+    @media (min-width: $desktop){
+    display: flex;
+    align-items:flex-start;
+    gap:30px;
+    }
+}
+.edge__column{
+    &:not(:first-child){
+        @media (max-width: $mobile){
+        margin-top: 30px;
+        }
+    }
+    @media (min-width: $desktop){
+    flex: 0 1 25%;
+    }
+}
+.column__title{
+    text-align: center;
+    display: block;
+    @media (min-width: $desktop){
+    display: block;
+    }
+}
+.edge__column .column__text{
+    display: block;
+    @media (min-width: $desktop){
+    display: block;
+    }
+}
+

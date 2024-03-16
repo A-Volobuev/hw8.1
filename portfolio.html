@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link href="./css/main.css" rel="stylesheet">
+    <title>hw8-portfolio</title>
+</head>
+<body>
+
+<div class="wrap">
+
+<!-- Заголовок БЕМ+ --> 
+<header class="header"> 
+
+    <!-- Навигация+ -->
+    <nav class="header__container container"> 
+            
+        <!-- Лого -->
+        <a href="#" class="header__logo logo"> <span class="logo-color">Web</span>Studio</a>
+
+        <!-- Mob header -->
+        <button data-menu-button type="button" class="header__menu" aria-expanded="false" aria-controls="header__menu-container">
+            <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+                <use class="header__menu-expand" href="./images/symbol-defs.svg#icon-menu_nav"></use>
+                <use class="header__menu-hide" href="./images/symbol-defs.svg#icon-menu-nav-close"></use>
+            </svg>
+        </button> 
+        <div data-menu class="header__menu-container" id="header__menu-container">
+
+            <ul class="header__nav">
+                <li class="header__nav-item item"><a href="index.html" class="link"">Студія</a></li>
+                <li class="header__nav-item item"><a href="portfolio.html" class="link">Портфоліо</a></li>
+                <li class="header__nav-item item"><a href="#" class="link">Контакти</a></li>
+            </ul>
+
+            <ul class="header__contacts contacts">
+                <li class="contacts__item">
+                    <a href="tel:+380961111111" class="contacts__link contacts__link-tel">
+                        <svg class="contacts__icon" >
+                            <use href="./images/symbol-defs.svg#icon-phone" width="16" height="12"></use>
+                        </svg>
+                        +38 096 111 11 11
+                    </a>
+                </li>
+
+                <li class="contacts__item">
+                    <a href="mailto:info@devstudio.com" class="contacts__link contacts__link-mail"> 
+                        <svg class="contacts__icon">
+                            <use href="./images/symbol-defs.svg#icon-mail" width="16" height="12"></use>
+                        </svg>
+                        info@devstudio.com
+                    </a> 
+                </li>
+            </ul>
+
+            <ul class="menu__social">
+                <li class="menu__social-item"><a href="#" class="menu__social-link">Instagram</a></li>
+                <li class="menu__social-item"><a href="#" class="menu__social-link">Twitter</a></li>
+                <li class="menu__social-item"><a href="#" class="menu__social-link">Facebook</a></li>
+                <li class="menu__social-item"><a href="#" class="menu__social-link">LinkedIn</a></li>
+            </ul>
+            
+        </div>
+        
+        <!-- меню сайта -->
+        <ul class="header__nav header__nav-mapping">
+            <li class="header__nav-item item "><a href="index.html" class="link"">Студія</a></li>
+            <li class="header__nav-item item header__action"><a href="portfolio.html" class="link">Портфоліо</a></li>
+            <li class="header__nav-item item"><a href="#" class="link">Контакти</a></li>
+        </ul>
+
+        <!-- Контакты -->
+        <ul class="header__contacts contacts header__nav-mapping">
+
+            <li class="contacts__item">
+                <a href="mailto:info@devstudio.com" class="contacts__link"> 
+                    <svg class="contacts__icon">
+                        <use href="./images/symbol-defs.svg#icon-mail" width="16" height="12"></use>
+                    </svg>
+                    info@devstudio.com
+                </a> 
+            </li>
+
+            <li class="contacts__item">
+                <a href="tel:+380961111111" class="contacts__link">
+                    <svg class="contacts__icon" >
+                        <use href="./images/symbol-defs.svg#icon-phone" width="16" height="12"></use>
+                    </svg>
+                    +38 096 111 11 11
+                </a>
+            </li>
+        </ul>
+
+    </nav> 
+</header>
+
+
+<main>
+    <div class="main-portfolio">
+        <div class="main-portfolio__container container">
+
+            <!-- фильтр -->
+            <div class="filter__block">
+                <ul class="filter__list">
+                    <li class="filter__list-item"><button class="filter__button unactive-buttons" type="button">Усі</button></li>
+                    <li class="filter__list-item"><button class="filter__button unactive-buttons" type="button">Веб-сайти</button></li>
+                    <li class="filter__list-item"><button class="filter__button unactive-buttons" type="button">Додатки</button></li>
+                    <li class="filter__list-item"><button class="filter__button unactive-buttons" type="button">Дизайн</button></li>
+                    <li class="filter__list-item"><button class="filter__button unactive-buttons" type="button">Маркетинг</button></li>
+                </ul>
+            </div>
+
+            <!-- Категории -->
+            <div class="category">                
+            <ul class="category__list">
+
+                <li class="category__column">
+                    <div class="category__wrapper">
+                        <img  src="./images/portfolio-category/texno.webp" alt="" class="category__wrapper-image">                      
+                        <div class="category__hover-box"> 
+                            Далеко-далеко за словесными горами, в стране гласных и согласных живут рыбные тексты.
+                        </div>
+                    </div>
+
+                    <div class="category__sign">                        
+                        <h3 class="sign__title">Тухнокряк</h3>                                                
+                        <p class="sign__subtitle">Веб-сайт</p>                        
+                    </div>
+                </li>
+
+                <li class="category__column">
+                        <div class="category__wrapper">
+                            <img src="./images/portfolio-category/neworlean.webp" alt="" class="category__wrapper-image">
+                            <div class="category__hover-box"> 
+                                Далеко-далеко за словесными горами, в стране гласных и согласных живут рыбные тексты.
+                            </div>
+                        </div>
+
+                    <div class="category__sign">
+                        <h3 class="sign__title">Постер New Orlean vs Golden Star</h3>                                                
+                        <p class="sign__subtitle">Дизайн</p>                                                
+                    </div>
+                </li>
+
+                <li class="category__column">
+                    <div class="category__wrapper">
+                        <img src="./images/portfolio-category/seafood.webp" alt="" class="category__wrapper-image" >
+                        <div class="category__hover-box"> 
+                            Далеко-далеко за словесными горами, в стране гласных и согласных живут рыбные тексты.
+                        </div>
+                    </div>
+
+                    <div class="category__sign">
+                        <h3 class="sign__title">Ресторан Seafood</h3>                                                
+                        <p class="sign__subtitle">Додаток</p>                                               
+                    </div>
+                </li>
+
+                <li class="category__column">
+                    <img src="./images/portfolio-category/prime.webp" alt="" class="category__wrapper-image" >
+                    <div class="category__sign">
+                        <h3 class="sign__title">Проект Prime</h3>                                                
+                        <p class="sign__subtitle">Маркетинг</p>                                                
+                    </div>
+                </li>
+
+                <li class="category__column">
+                    <img src="./images/portfolio-category/boxes.webp" alt="" class="category__wrapper-image">
+                    <div class="category__sign">
+                        <h3 class="sign__title">Проект Boxes</h3>                                                
+                        <p class="sign__subtitle">Додаток</p>                                                
+                    </div>
+                </li>
+
+                <li class="category__column">
+                    <img src="./images/portfolio-category/inspiration.webp" alt="" class="category__wrapper-image">
+                    <div class="category__sign">
+                        <h3 class="sign__title">Inspiration has no Borders</h3>                                                
+                        <p class="sign__subtitle">Веб-сайт</p>                                                
+                    </div>
+                </li>
+
+                <li class="category__column">
+                    <img src="./images/portfolio-category/limited.webp" alt="" class="category__wrapper-image">
+                    <div class="category__sign">
+                        <h3 class="sign__title">Видання Limited Edition</h3>                                               
+                        <p class="sign__subtitle">Дизайн</p>                                                
+                    </div>
+                </li>
+
+                <li class="category__column">
+                    <img src="./images/portfolio-category/lab.webp" webp="" class="category__wrapper-image">
+                    <div class="category__sign">
+                        <h3 class="sign__title">Проект LAB</h3>                       
+                        <p class="sign__subtitle">Маркетинг</p>                        
+                    </div>
+                </li>
+
+                <li class="category__column">
+                    <img src="./images/portfolio-category/growing.webp" alt="" class="category__wrapper-image">
+                    <div class="category__sign">
+                        <h3 class="sign__title">Growing Business</h3>                        
+                        <p class="sign__subtitle">Додаток</p>                      
+                    </div>
+                </li>
+
+            </ul>
+            </div>
+
+        </div>
+    </div>
+</main>
+
+<!-- Контактная информация -->
+<footer class="footer">
+
+    <div class="footer__container container">
+
+        <address class="footer__block ">
+            <div class="footer__box">
+                <!-- Лого -->
+                <a href="#" class="footer__logo logo"><span class="logo-color">Web</span>Studio</a>
+                <!-- Адрес -->
+                <!-- Контакты -->
+                <ul class="footer__adress adress">
+                    <li class="adress__item"><p>м. Київ, пр-т Лесі Українки, 26</p></li>
+                    <li class="adress__item"><a href="mailto:info@devstudio.com">info@devstudio.com</a> </li>
+                    <li class="adress__item"><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+                </ul>
+            </div>
+        </address>
+
+        <div class="footer__social-block">
+            <h3 class="footer__social-title">приєднуйтесь</h3>
+            <ul class="footer__social social">
+                <li> 
+                    <a class="footer__social-button social__button" href="#"> 
+                        <svg class="" width="20px" height="20px"> 
+                            <use href="./images/symbol-defs.svg#icon-instagram"> 
+                            </use> 
+                        </svg> 
+                    </a> 
+                </li>
+                <li>
+                    <a class="footer__social-button social__button" href="#"> 
+                        <svg class="" width="20px" height="20px"> 
+                            <use href="./images/symbol-defs.svg#icon-x"> 
+                            </use> 
+                        </svg> 
+                    </a> 
+                </li>
+                <li>
+                    <a class="footer__social-button social__button" href="#"> 
+                        <svg class="" width="20px" height="20px"> 
+                            <use href="./images/symbol-defs.svg#icon-facebook"> 
+                            </use> 
+                        </svg> 
+                    </a> 
+                </li>
+                <li>
+                    <a class="footer__social-button social__button" href="#"> 
+                        <svg class="" width="20px" height="20px">
+                            <use href="./images/symbol-defs.svg#icon-linkedin"> 
+                            </use> 
+                        </svg> 
+                    </a> 
+                </li>
+            </ul> 
+        </div>
+
+        <div class="footer__form-block">
+
+            <h3 class="footer__form-title">Підпишіться на розсилку</h3>
+
+            <form action="" class="footer__form">
+
+                <input type="email" name="email" class="footer__form-mail" placeholder="E-mail">
+
+                <button class="footer__form-button button">
+                    <p class="footer-button__text"> Підписатися</p>
+                    <svg class="footer-button__mail-icon" width="24" height="24">
+                        <use href="./images/symbol-defs.svg#icon-send-form"></use>
+                    </svg>
+                </button>
+                
+            </form>
+
+        </div> 
+
+    </div>
+
+</footer>
+
+</div>
+<script src="./js/menu.js"></script>
+</body>
+
+</html>

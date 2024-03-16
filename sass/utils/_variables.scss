@@ -1,0 +1,33 @@
+// Цвета
+$color-brand: #2196F3; 
+$color-white: #FFF; 
+$color-title: #212121; 
+$color-subtitle: #757575;
+$color-logo:#000000;
+$color-category-button:#F5F4FA;
+$color-bg:#F5F4FA;
+$color-footer-bg:#2F303A;
+$color-unactive-svg:#AFB1B8;
+$hover-category-box:rgba(33, 150, 243, 0.9); 
+
+// анимации
+$animation: all 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+
+// изображения
+
+
+// ---Шрифт
+    // Жирность
+$font-weight-title: 700; 
+$font-weight-subtitle: 500;
+    // Размер
+$fs-40: 40px;
+$fs-36: 36px;
+$fs-34: 34px;
+$fs-28: 28px;
+$fs-24: 24px;
+$fs-18: 18px;
+$fs-16: 16px;
+    // Междустрочный интервал
+$line-height-main: 1.71 ;
+$line-height-submain: 1.17;

@@ -1,0 +1,54 @@
+@import'style-block/style-main-team';
+// ---------------------------------------------------------------Блок team---------------------------------------------------------------
+.team{
+    padding: 60px 0px;
+
+    @media (min-width: $desktop){
+    padding: 94px 0px;
+    }
+}
+// Заголовок
+.team__title{
+    font-size: $fs-28;
+    
+    @media (min-width: $desktop){
+    font-size: $fs-36;
+
+    grid-area: title;
+    }
+}
+// Список
+.team__list{
+    margin-top: 30px;
+
+    @media (min-width: $tablet){
+        display: grid;
+        grid-template: repeat(2, 1fr)/ repeat(2, 1fr); 
+        gap: 30px;
+    }
+
+    @media (min-width: $desktop){
+    display: grid;
+
+    grid-template: 1fr/ repeat(4, 1fr); 
+    gap: 30px;
+
+    margin-top: 50px;
+    }
+}
+// Настройка колонок
+.team__column{
+    display: flex;
+    flex-direction: column;
+
+    &:not(:first-child){
+        @media (max-width: $mobile){
+        margin-top: 30px;
+        }
+    }
+
+    @media (min-width: $desktop){
+    flex: 0 1 25%;
+    }
+}
+

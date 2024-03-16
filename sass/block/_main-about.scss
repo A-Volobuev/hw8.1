@@ -1,0 +1,66 @@
+// ---------------------------------------------------------------Блок about us---------------------------------------------------------------
+.section__about{
+    padding: 0px 0px 94px 0px;
+
+    @media (max-width: $desktop){
+    display: none;
+    }
+}
+.about__box{
+    display: grid;
+
+    grid-template: [start] "title title title" 1fr [row2]
+    [row2] "image image2 image3" [row-end]/  1fr 1fr 1fr;
+
+    gap: 30px; 
+}
+
+.about__title{
+    font-size: $fs-36;
+    font-weight: $font-weight-title;
+    line-height: $line-height-submain;
+    text-align: center;
+
+    margin: 0px 0px 50px 0px;
+
+    grid-area: title;
+}
+
+.about__column{
+    position: relative;
+
+    & .img{
+        object-fit: cover;
+        margin: 0;
+        width: 100%;
+    }
+}
+
+.about__image{
+    grid-area: image;
+}
+.about__image2{
+    grid-area: image2;
+}
+.about__image3{
+    grid-area: image3;
+}
+
+.about__column-text{
+    font-weight: $font-weight-title;
+    line-height:$line-height-main;
+    text-transform: uppercase;
+    text-align: center;
+    color: $color-white;
+    padding-top: 27px;
+    padding-bottom: 27px;
+
+    background-color: rgba(47, 48, 58, 0.8); ;
+
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    bottom:0;
+    z-index: 2;
+}
+

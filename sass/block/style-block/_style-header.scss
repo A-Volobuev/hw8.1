@@ -1,0 +1,30 @@
+// Стили заголовка
+.header {
+    border-bottom: 0.5px solid #ECECEC;
+}
+.header__nav {   
+    font-weight: $font-weight-subtitle;
+    line-height:$line-height-submain;
+
+    &-item{
+        transition: $animation;
+    }
+
+    &-item:hover, &-item:focus{
+        color: $color-brand;
+    }
+}
+.contacts__link {
+    fill: $color-subtitle;
+    color: $color-subtitle;
+
+    font-weight: $font-weight-subtitle;
+    line-height:$line-height-submain;
+
+    transition: $animation;
+
+    &:hover, &:focus{
+        fill: $color-brand;
+        color: $color-brand;
+    }
+}

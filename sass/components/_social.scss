@@ -1,0 +1,26 @@
+.social{
+    display: flex;
+    justify-content: center;
+}
+.social li a{
+    display: flex;
+    align-items: center;
+    justify-content:center ;
+}
+.social li{
+gap: 10px;
+}
+.social__button{
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color:$color-white;
+    fill: $color-unactive-svg;
+
+    transition: $animation;
+
+    &:hover{
+        background-color:$color-brand;
+        fill: $color-white;
+    }  
+}

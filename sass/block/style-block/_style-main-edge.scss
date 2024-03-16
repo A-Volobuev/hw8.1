@@ -1,0 +1,26 @@
+// Стили edge
+.column__title{
+    text-transform: uppercase;
+
+    font-weight: $font-weight-title;
+    line-height: $line-height-submain;
+}
+.edge__column .column__text{
+    margin-top: 10px;
+    line-height: $line-height-main;
+
+    color:$color-subtitle;
+}
+.column__icon-box{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    
+    background-color:$color-bg;
+    margin-bottom: 30px;
+    height: 120px;
+}
+.column__icon{
+    height: 70px;
+    width: 70px;
+}

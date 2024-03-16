@@ -1,0 +1,23 @@
+// utils
+@import './utils/breakpoint';
+@import './utils/reset';
+@import './utils/variables';
+@import './utils/base';
+
+// comonents
+@import'./components/logo'; 
+@import'./components/button';
+@import'./components/social';
+@import'./components/modal-input';
+
+// Блоки
+@import './block/main-page';
+@import './block/main-edge';
+@import './block/main-about';
+@import './block/main-team';
+@import './block/main-client'; 
+@import './block/main-modal'; 
+
+// header footer
+@import './block/header';
+@import './block/footer';
